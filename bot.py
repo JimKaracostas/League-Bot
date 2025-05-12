@@ -33,14 +33,6 @@ class LeagueData:
         self.create_tables()
 
     def create_tables(self):
-        # Drop existing tables
-        self.cursor.execute("DROP TABLE IF EXISTS match_results")
-        self.cursor.execute("DROP TABLE IF EXISTS scheduled_matches")
-        self.cursor.execute("DROP TABLE IF EXISTS player_teams")
-        self.cursor.execute("DROP TABLE IF EXISTS team_captains")
-        self.cursor.execute("DROP TABLE IF EXISTS player_stats")
-        self.cursor.execute("DROP TABLE IF EXISTS teams")
-        self.cursor.execute("DROP TABLE IF EXISTS standings")
 
         # Create tables
         self.cursor.execute('''
